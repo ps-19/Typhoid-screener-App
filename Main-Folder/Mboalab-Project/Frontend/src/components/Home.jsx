@@ -10,7 +10,7 @@ function Home() {
       <section id="header" className="py-4">
         <div className="nav_bg container-fluid">
           <div className="container p-0 mx-auto row">
-            <div className="col-lg-5 pb-4 pt-lg-0 d-flex justify-content-center flex-column include">
+            <div className="col-xl-5 pb-4 pt-lg-0 d-flex justify-content-center flex-column include">
               <h1>
                 Online Typhoid Checkup With{' '}
                 <strong className="brand-name">MboaLab</strong>
@@ -32,7 +32,7 @@ function Home() {
                 and improve people’s living conditions through open science.
               </p>
 
-              <div className="mt-3 d-flex  flex-column flex-md-row justify-content-between align-items-start align-items-lg-center">
+              <div className="mt-3 d-flex  flex-column flex-lg-row justify-content-between align-items-start align-items-xl-center">
                 <NavLink to="/service" className="btn-get-started">
                   Assess Yourself
                 </NavLink>
@@ -53,7 +53,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 pt-0 pt-lg-0">
+            <div className="col-xl-4 pt-0 pt-lg-0">
               <img
                 src={cc}
                 className="img-fluid animated change shadow-sm"
@@ -61,7 +61,7 @@ function Home() {
               />
             </div>
 
-            <div className="col-lg-3 p-0  mt-3 mt-lg-0">
+            <div className="col-xl-3 p-0  mt-3 mt-lg-0">
               <div>
                 <iframe
                   title="healthy bot"
