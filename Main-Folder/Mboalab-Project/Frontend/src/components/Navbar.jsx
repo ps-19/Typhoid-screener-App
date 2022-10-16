@@ -60,6 +60,7 @@ function Navbar() {
                       className="nav-link"
                       target="_blank"
                       href="https://murmuring-castle-35671.herokuapp.com"
+                      rel="noreferrer"
                     >
                       Talk
                     </a>
