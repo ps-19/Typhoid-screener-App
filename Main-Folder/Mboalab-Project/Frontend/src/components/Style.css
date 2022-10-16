@@ -1,8 +1,8 @@
-.abcd{
-background-image: url('../asset/image/background_lighting.jpg');
-background-size: cover;
-background-repeat: repeat;
-height: 100%;
+.abcd {
+  background-image: url('../asset/image/background_lighting.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100%;
 }
 
 .navbar-brand {
@@ -169,10 +169,12 @@ height: 100%;
 
 /* ====================    Images and text    =========================== */
 
-
-.Cmine {
-  margin-left: 325px;
+@media screen and (min-width: 1024px) {
+  .Cmine {
+    margin-left: 325px;
+  }
 }
+
 
 
 
