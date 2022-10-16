@@ -1,35 +1,34 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "./Style.css";
-import image from "../asset/image/icon.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Style.css';
+import image from '../asset/image/icon.png';
 
 function Navbar() {
   return (
     <>
-      <div className="container-fluid nav_bg bg-light">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="nav_bg bg-light">
+        <div className="lg-row">
+          <div className="col-lg-10  mx-lg-auto">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
               <img src={image} height="60" width="90" alt="" />
+
               <NavLink className="navbar-brand" to="/">
                 MboaLab
               </NavLink>
+
               <button
-                className="navbar-toggler"
+                class="navbar-toggler"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
               </button>
 
-              <div
-                className="collapse navbar-collapse app-nav"
-                id="navbarSupportedContent"
-              >
+              <div className="collapse navbar-collapse app-nav" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item active">
                     <NavLink className="nav-link" to="/">
@@ -57,7 +56,11 @@ function Navbar() {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" target="_blank" href="https://murmuring-castle-35671.herokuapp.com">
+                    <a
+                      className="nav-link"
+                      target="_blank"
+                      href="https://murmuring-castle-35671.herokuapp.com"
+                    >
                       Talk
                     </a>
                   </li>

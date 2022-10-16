@@ -1,26 +1,26 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import cc from "../asset/image/SecondSide.jpg";
-import ins from "../asset/image/stethoscope.jpg";
-import "./HomeCss.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import cc from '../asset/image/SecondSide.jpg';
+import ins from '../asset/image/stethoscope.jpg';
+import './HomeCss.css';
 
 function Home() {
   return (
     <>
       <section id="header" className="d-flex align-items-center">
-        <div className="container-fluid nav_bg">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-11 mx-auto">
               <div className="row">
                 <div className="col-md-5 pb-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column include">
                   <h1>
-                    Online Typhoid Checkup With{" "}
+                    Online Typhoid Checkup With{' '}
                     <strong className="brand-name">MboaLab</strong>
                   </h1>
                   <h6 className="my-3">
-                    MboaLab is an open and collaborative space located in{" "}
+                    MboaLab is an open and collaborative space located in{' '}
                     <a
-                      href={"https://goo.gl/maps/wxA41SDU4ut2TFHY7"}
+                      href={'https://goo.gl/maps/wxA41SDU4ut2TFHY7'}
                       className="nav-link2"
                     >
                       Yaoundé, Cameroon
@@ -56,9 +56,13 @@ function Home() {
                 </div>
 
                 <div className="col-lg-3 pt-0 pt-lg-0 order-2 order-lg-1">
-                <iframe width="350" height="550" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"></iframe>
+                  <iframe
+                    width="350"
+                    height="550"
+                    allow="microphone;"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"
+                  ></iframe>
                 </div>
-
               </div>
             </div>
           </div>
