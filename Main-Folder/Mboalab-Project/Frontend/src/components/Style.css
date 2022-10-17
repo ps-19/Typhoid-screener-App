@@ -352,3 +352,23 @@ height: 100%;
 .link {
   text-decoration: none;
 }
+
+
+.footer{
+  text-align: center;
+  float: center;
+  
+}
+
+.btn-inside{ 
+  background-color: yellow;
+  border-radius: 0.2em;
+  margin-bottom:50%;
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+.btn-inside:hover{
+  background-color: white;
+}

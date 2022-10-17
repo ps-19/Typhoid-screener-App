@@ -61,9 +61,11 @@ function Register() {
                     placeholder="Password" name="password"
                   />
                 </div>
-                <div className="form-group">
-                  <button className="btn float-right login_btn" type="submit" href="http://localhost:3000/service">Register</button>
-                </div>
+
+                <div class="footer">
+              <button type="submit" className="btn-inside">Register</button><br></br>
+          </div>
+
               </form>
             </div>
             <div className="card-footer">
