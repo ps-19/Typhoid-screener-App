@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Style.css";
 import image from "../asset/image/icon.png";
 
@@ -11,9 +11,9 @@ function Navbar() {
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <img src={image} height="60" width="90" alt="" />
-              <NavLink className="navbar-brand" to="/">
+              <Link className="navbar-brand" to="/">
                 MboaLab
-              </NavLink>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -32,44 +32,48 @@ function Navbar() {
               >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item active">
-                    <NavLink className="nav-link" to="/">
+                    <Link className="nav-link" to="/">
                       Home
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/service">
+                    <Link className="nav-link" to="/service">
                       Online Checkup
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/about">
+                    <Link className="nav-link" to="/about">
                       About Us
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/contact">
+                    <Link className="nav-link" to="/contact">
                       Contact Us
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/comments">
+                    <Link className="nav-link" to="/comments">
                       Public Comments
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" target="_blank" href="https://murmuring-castle-35671.herokuapp.com">
+                    <a
+                      className="nav-link"
+                      target="_blank"
+                      href="https://murmuring-castle-35671.herokuapp.com"
+                    >
                       Talk
                     </a>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/login">
+                    <Link className="nav-link" to="/login">
                       Login
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/register">
+                    <Link className="nav-link" to="/register">
                       Register
-                    </NavLink>
+                    </Link>
                   </li>
                 </ul>
               </div>
