@@ -1,11 +1,10 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const connectDB = require('./DB/connect');
 const commentRoute = require('./routes/comment');
 const surveyRoute = require('./routes/surveyInfo');
-const messageRoute = require('./routes/userMessage')
-dotenv.config({ path: './config.env' });
+const messageRoute = require('./routes/userMessage');
 const path = require('path');
+
 
 const app = express();
 
@@ -41,12 +40,13 @@ app.get('/contact', (req, res) => {
     res.send('Get operation has been called on contact route.');
 })
 
+const MONGO_URI = "mongodb+srv://admin:12345@cluster0.ljfwx8r.mongodb.net/Mboalab-Database?retryWrites=true&w=majority"
 
 
 
-const port = process.env.PORT || 5000;
+const port =  5000;
 const start = async () => {
-	await connectDB(process.env.MONGO_URI);
+	await connectDB(MONGO_URI);
 
 	app.listen(port, () => {
 		console.log(`Server is listening on port ${port}...`);
