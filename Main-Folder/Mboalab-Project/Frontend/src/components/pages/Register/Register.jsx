@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
-import { Form, Button, Input, notification } from "antd";
+import { Form, Button, Input, notification, Modal } from "antd";
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
+
+//internal imports
+import "./Register.css";
+import image from "../../../asset/image/SecondSide.jpg";
+import Termsofuse from "../Termsofuse";
 
 const Register = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const onFinish = (values) => {
     setLoading(true);
@@ -33,8 +39,14 @@ const Register = () => {
 
   return (
     <div className="register">
+      <div className="image-container">
+        <img src={image} alt="logo" />
+      </div>
       <div className="register-container">
-        <h1>Register</h1>
+        <h1>REGISTER</h1>
+        <p>
+          Welcome, please register to your account to continue using our app
+        </p>
         <Form
           form={form}
           name="register"
@@ -44,10 +56,6 @@ const Register = () => {
           <Form.Item
             name="email"
             rules={[
-              // {
-              //   type: "email",
-              //   message: "The input is not valid E-mail!",
-              // },
               {
                 required: true,
                 message: "Please input your E-mail!",
@@ -100,7 +108,54 @@ const Register = () => {
               placeholder="Confirm Password"
             />
           </Form.Item>
-          <Form.Item>
+          <Form.Item
+            style={{
+              textAlign: "left",
+              marginTop: "10px",
+            }}
+            rules={[
+              {
+                required: true,
+                message: "Please accept our terms and conditions",
+              },
+            ]}
+          >
+            <input type="checkbox" />I have read the{" "}
+            <p
+              style={{
+                display: "inline",
+                color: "#1890ff",
+                textDecoration: "underline",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                setVisible(true);
+              }}
+            >
+              terms and conditions
+            </p>
+          </Form.Item>
+          <Modal
+            visible={visible}
+            footer={
+              <Button
+                type="primary"
+                onClick={() => {
+                  setVisible(false);
+                }}
+              >
+                OK
+              </Button>
+            }
+            closable={true}
+          >
+            <Termsofuse />
+          </Modal>
+          <Form.Item
+            style={{
+              textAlign: "left",
+            }}
+          >
             <Button
               type="primary"
               htmlType="submit"

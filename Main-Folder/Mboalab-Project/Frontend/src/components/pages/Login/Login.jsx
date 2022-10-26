@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
-import { Form, Button, Input, notification } from "antd";
+import { Form, Button, Input, notification, Space } from "antd";
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
+
+//internal imports
+import "./Login.css";
+import image from "../../../asset/image/SecondSide.jpg";
 
 const Login = () => {
   const [form] = Form.useForm();
@@ -32,16 +36,18 @@ const Login = () => {
 
   return (
     <div className="login">
+      <div className="image-container">
+        <img src={image} alt="logo" />
+      </div>
       <div className="login-container">
-        <h1>Login</h1>
+        <h1>LOGIN</h1>
+        <p>
+          Welcome back, please login to your account to continue using our app
+        </p>
         <Form form={form} name="login" onFinish={onFinish} scrollToFirstError>
           <Form.Item
             name="email"
             rules={[
-              // {
-              //   type: "email",
-              //   message: "The input is not valid E-mail!",
-              // },
               {
                 required: true,
                 message: "Please input your E-mail!",
@@ -68,7 +74,26 @@ const Login = () => {
               placeholder="Password"
             />
           </Form.Item>
-          <Form.Item>
+          <Form.Item
+            name="remember"
+            valuePropName="checked"
+            style={{
+              marginTop: 0,
+              marginBottom: "10px",
+              textAlign: "left",
+            }}
+          >
+            <Space>
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </Space>
+          </Form.Item>
+
+          <Form.Item
+            style={{
+              textAlign: "left",
+            }}
+          >
             <Button
               type="primary"
               htmlType="submit"
