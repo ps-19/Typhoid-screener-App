@@ -1,7 +1,7 @@
 const express = require('express');
-const connectDB = require('./DB/connect');
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
+const connectDB = require('./DB/connect');
 const commentRoute = require('./routes/comment');
 const surveyRoute = require('./routes/surveyInfo');
 const messageRoute = require('./routes/userMessage');
@@ -17,10 +17,7 @@ const publicDirectoryPath = path.join(__dirname, './public');
 app.use(express.static(publicDirectoryPath));
 
 app.use('/', commentRoute, surveyRoute, messageRoute);
-
-
 // use ends
-
 
 app.get('/', (req, res) => {
     res.render(index.html);
