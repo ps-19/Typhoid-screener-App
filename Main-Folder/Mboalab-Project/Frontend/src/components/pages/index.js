@@ -1,0 +1,11 @@
+export { default as Home } from "./Home";
+export { default as Service } from "./Service";
+export { default as Register } from "./Register";
+export { default as Page404 } from "./Page404";
+export { default as Login } from "./Login";
+export { default as Comments } from "./Comments";
+export { default as Contact } from "./Contact";
+export { default as About } from "./About";
+export { default as NavBar } from "./NavBar";
+export { default as Termsofuse } from "./Termsofuse";
+export { default as AppLayout } from "./AppLayout";
