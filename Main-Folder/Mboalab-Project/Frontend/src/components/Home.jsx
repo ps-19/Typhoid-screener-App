@@ -45,6 +45,7 @@ function Home() {
                         height="27px"
                         width="44px"
                         className="image"
+                        alt="helpline"
                       />
                       HelpLine
                     </a>
@@ -56,7 +57,7 @@ function Home() {
                 </div>
 
                 <div className="col-lg-3 pt-0 pt-lg-0 order-2 order-lg-1">
-                <iframe width="350" height="550" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"></iframe>
+                <iframe title="microphone" width="350" height="550" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"></iframe>
                 </div>
 
               </div>
