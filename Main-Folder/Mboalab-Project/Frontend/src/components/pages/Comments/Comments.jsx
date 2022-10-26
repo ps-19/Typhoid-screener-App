@@ -1,118 +1,111 @@
-import React from "react";
-import { Link } from "@reach/router";
-import Data from "../../Data-Loading/comment";
-import CommentCard from "../../Data-Loading/CommentCard";
+import React, { useState } from "react";
+import { Button, List, Avatar, Modal } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 
-function renderHere(item) {
-  return (
-    <CommentCard
-      firstname={item.firstname}
-      lastname={item.lastname}
-      email={item.email}
-      comment={item.comment}
-    />
-  );
-}
-function Comments() {
-  const { data, loading } = Data();
-  return (
-    <>
-      <div className="col-8 mx-auto">
-        <div className="row">
-          {loading && <p>Loading the comments.....</p>}
+//internal imports
+import { data } from "./components";
+import "./Comments.css";
+import Termsofuse from "../Termsofuse";
 
-          {!loading && (
-            <>
-              <div className="comment-heading">
-                <h6>
-                  Racist, sexist, homophobic or generally hate filled comments
-                  have no place here.
-                </h6>
-                <p>
-                  we recommend you follow this list of{" "}
-                  <Link className="my-link" to="/terms-of-use">
-                    guidelines
-                  </Link>
-                </p>
-              </div>
-              <div>{/* {data.map(item => (renderHere(item)))} */}</div>
-            </>
+const Comments = () => {
+  const [comments, setComments] = useState(data);
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+  const [visible, setVisible] = useState(false);
+
+  const addComment = (e) => {
+    e.preventDefault();
+    const newComment = {
+      id: comments.length + 1,
+      name: name,
+      comment: comment,
+    };
+    setComments([...comments, newComment]);
+    setName("");
+    setComment("");
+  };
+
+  return (
+    <div className="comments-container">
+      <div className="loaded-comments-container">
+        <h2>Comments from Users</h2>
+        <List
+          itemLayout="horizontal"
+          dataSource={comments}
+          renderItem={(item) => (
+            <List.Item>
+              <List.Item.Meta
+                avatar={<Avatar size={"large"} icon={<UserOutlined />} />}
+                title={item.name}
+                description={item.comment}
+              />
+            </List.Item>
           )}
-          <div className="my-form">
-            <form
-              id="contact-form"
-              action="/comments"
-              method="post"
-              role="form"
-            >
-              <div className="controls">
-                <p>
-                  <b>If you have any query please ask from community.</b>
-                </p>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label htmlFor="form_name">User Id</label>
-                      <input
-                        id="form_name"
-                        type="text"
-                        name="firstname"
-                        className="form-control"
-                        placeholder="Please enter your UserID"
-                        data-error="UserID is required."
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <label htmlFor="form_email">
-                        Email <span className="sp"> *</span>
-                      </label>
-                      <input
-                        id="form_email"
-                        type="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Please enter your email *"
-                        required="required"
-                        data-error="Valid email is required."
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <label htmlFor="form_message">
-                        Comment <span className="sp"> *</span>
-                      </label>
-                      <textarea
-                        id="form_message"
-                        name="comment"
-                        className="form-control"
-                        placeholder="Write your message here."
-                        rows="3"
-                        data-error="Please, leave us a comment."
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="col-md-12">
-                    <input
-                      type="submit"
-                      className="btn btn-outline-info btn-send  pt-2 btn-block"
-                      value="Publish Your Comment"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        />
       </div>
-    </>
+
+      {/* to add a new comment */}
+      <div className="add-comments-container">
+        <h2>Leave a Comment for Us</h2>
+        <h6>
+          Racist, sexist, homophobic or generally hate filled comments have no
+          place here. We recommend you follow this list of{" "}
+          <span
+            style={{
+              display: "inline",
+              color: "#043758",
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              setVisible(true);
+            }}
+          >
+            guidlines
+          </span>
+        </h6>
+        <Modal
+          visible={visible}
+          footer={
+            <Button
+              type="primary"
+              onClick={() => {
+                setVisible(false);
+              }}
+            >
+              OK
+            </Button>
+          }
+          closable={true}
+        >
+          <Termsofuse />
+        </Modal>
+        <form name="comment" autoComplete="off" onSubmit={addComment}>
+          <input
+            name="name"
+            value={name}
+            placeholder="Name"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <textarea
+            name="comment"
+            value={comment}
+            placeholder="Comment"
+            onChange={(e) => setComment(e.target.value)}
+          />
+          <Button
+            type="primary"
+            htmlType="submit"
+            style={{
+              backgroundColor: "#043758",
+              borderColor: "#043758",
+            }}
+          >
+            Submit
+          </Button>
+        </form>
+      </div>
+    </div>
   );
-}
+};
 
 export default Comments;

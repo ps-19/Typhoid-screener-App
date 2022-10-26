@@ -3,9 +3,14 @@ import React from "react";
 const Termsofuse = () => {
   // to get the current year
   const year = new Date().getFullYear();
-  
+
   return (
-    <div className="termsofuse">
+    <div
+      style={{
+        height: "500px",
+        overflow: "auto",
+      }}
+    >
       <h1 className="termHeading">
         <b>Copyright notice</b>
       </h1>
