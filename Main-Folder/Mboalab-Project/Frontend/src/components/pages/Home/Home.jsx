@@ -5,6 +5,7 @@ import { BsChatDots } from "react-icons/bs";
 //internal imports
 import { SlideShow } from "./components";
 import "./Home.css";
+import image from "../../../asset/image/photo3.jpg";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -91,7 +92,9 @@ const Home = () => {
         <div
           className="facts-container"
           style={{
-            backgroundColor: "#3b586b",
+            // backgroundColor: "#3b586b",
+            backgroundImage: `url(${image})`,
+            filter: "brightness(0.9)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

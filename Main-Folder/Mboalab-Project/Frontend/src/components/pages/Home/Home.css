@@ -144,16 +144,19 @@
 
 .fact {
   font-size: 18px;
-  color: #fff;
+  color: #3b586b;
   margin: 40px;
   text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px;
 }
 
 .facts-container > span {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 25px;
+  /* font-weight: 600; */
   color: #fff !important;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px;
+  background-color: #3b586b8d;
   text-align: center;
   /* letter-spacing: 1px; */
 }

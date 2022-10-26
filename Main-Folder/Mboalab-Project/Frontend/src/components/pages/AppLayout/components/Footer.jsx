@@ -7,7 +7,6 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
-import { MdFingerprint } from "react-icons/md";
 import "./Footer.css";
 import image from "../../../../asset/image/icon.png";
 
@@ -15,7 +14,6 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <div className="footer-container">
-      {/* <hr /> */}
       <div className="footer-logo">
         <Link to="/" className="social-logo">
           <img src={image} alt="logo" className="navbar-icon" />

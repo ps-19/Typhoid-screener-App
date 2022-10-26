@@ -10,7 +10,12 @@ import img5 from "../../../asset/image/photo5.jpg";
 const AboutUs = () => {
   return (
     <>
-      <main className="AboutUs">
+      <main
+        className="AboutUs"
+        style={{
+          margin: "50px",
+        }}
+      >
         <section className="hero" id="hero">
           <div className="container">
             <div className="row">

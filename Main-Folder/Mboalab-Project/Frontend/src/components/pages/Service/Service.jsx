@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import moment from "moment";
-import { DatePicker, Button, Input } from "antd";
+import { DatePicker, Button, Input, Select } from "antd";
 
 //internal imports
 import { listOfCountries, Symptoms } from "./components";
 
 const Service = () => {
+  const { Option } = Select;
   const {
     handleChange,
     handleSubmit,
@@ -149,7 +150,7 @@ const Service = () => {
                 <div className="text-danger">{errors.email}</div>
               )}
             </div>
-            <div className="form-group">
+            <div>
               <label htmlFor="country">
                 Country
                 <span
@@ -160,7 +161,7 @@ const Service = () => {
                   *
                 </span>
               </label>
-              <select
+              <Select
                 className="form-control"
                 id="country"
                 name="country"
@@ -168,13 +169,13 @@ const Service = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               >
-                <option value="">Select Country</option>
+                <Option value="">Select Country</Option>
                 {listOfCountries.map((country) => (
-                  <option key={country.code} value={country.code}>
+                  <Option key={country.code} value={country.code}>
                     {country.name}
-                  </option>
+                  </Option>
                 ))}
-              </select>
+              </Select>
               {errors.country && touched.country && (
                 <div className="text-danger">{errors.country}</div>
               )}
@@ -190,7 +191,7 @@ const Service = () => {
                   *
                 </span>
               </label>
-              <select
+              <Select
                 className="form-control"
                 id="age"
                 name="age"
@@ -198,15 +199,15 @@ const Service = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               >
-                <option value="">Select Age</option>
-                <option value="under 13">Under 13</option>
-                <option value="13-17">13-17</option>
-                <option value="18-24">18-24</option>
-                <option value="26-34">26-34</option>
-                <option value="36-44">36-44</option>
-                <option value="46-54">46-54</option>
-                <option value="55 or older">55 and Above</option>
-              </select>
+                <Option value="">Select Age</Option>
+                <Option value="under 13">Under 13</Option>
+                <Option value="13-17">13-17</Option>
+                <Option value="18-24">18-24</Option>
+                <Option value="26-34">26-34</Option>
+                <Option value="36-44">36-44</Option>
+                <Option value="46-54">46-54</Option>
+                <Option value="55 or older">55 and Above</Option>
+              </Select>
               {errors.age && touched.age && (
                 <div className="text-danger">{errors.age}</div>
               )}
@@ -248,6 +249,7 @@ const Service = () => {
             flexDirection: "column",
             alignItems: "center",
             gap: "30px",
+            marginTop: "60px",
           }}
         >
           <h5>Please tell us the symptoms you are experiencing!</h5>

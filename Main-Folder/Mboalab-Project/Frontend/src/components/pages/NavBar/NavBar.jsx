@@ -82,14 +82,6 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a
-                  href="https://murmuring-castle-35671.herokuapp.com/"
-                  className="nav-links"
-                >
-                  Talk
-                </a>
-              </li>
-              <li className="nav-item">
                 <Link
                   to="/login"
                   className="nav-links"
