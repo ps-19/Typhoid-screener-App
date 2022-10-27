@@ -31,6 +31,10 @@ const Home = () => {
       id: 5,
       fact: "Typhoid fever can be prevented by practicing good hygiene, including washing hands with soap and clean water.",
     },
+    {
+      id: 6,
+      fact: " Typhoid fever is a serious illness that can cause a high fever, headache, weakness, and stomach pain. Typhoid fever can be prevented by practicing good hygiene, including washing hands with soap and clean water.",
+    },
   ];
 
   // to set random fact to display
