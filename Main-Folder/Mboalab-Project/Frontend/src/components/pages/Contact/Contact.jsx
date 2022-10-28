@@ -105,7 +105,7 @@ const Contact = () => {
           <iframe
             title="map"
             src="https://maps.google.com/maps?width=213&amp;height=207&amp;hl=en&amp;q=Yaounde cameroon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            frameborder="0"
+            frameBorder="0"
             style={{
               border: 0,
               width: "100%",
@@ -115,9 +115,9 @@ const Contact = () => {
               background: "none",
               marginTop: "20px",
             }}
-            allowfullscreen=""
+            allowFullScreen=""
             aria-hidden="false"
-            tabindex="0"
+            tabIndex="0"
           ></iframe>
           <br />
 

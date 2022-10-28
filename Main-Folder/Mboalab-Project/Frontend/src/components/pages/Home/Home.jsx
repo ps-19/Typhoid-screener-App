@@ -6,6 +6,7 @@ import { BsChatDots } from "react-icons/bs";
 import { SlideShow } from "./components";
 import "./Home.css";
 import image from "../../../asset/image/photo3.jpg";
+import { Card } from "../About/components";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -30,10 +31,6 @@ const Home = () => {
     {
       id: 5,
       fact: "Typhoid fever can be prevented by practicing good hygiene, including washing hands with soap and clean water.",
-    },
-    {
-      id: 6,
-      fact: " Typhoid fever is a serious illness that can cause a high fever, headache, weakness, and stomach pain. Typhoid fever can be prevented by practicing good hygiene, including washing hands with soap and clean water.",
     },
   ];
 
@@ -65,21 +62,21 @@ const Home = () => {
           </h3>
 
           <div className="flex-container">
-            <div className="flex-item-1">
+            <div className="flex-item-1 flex-item">
               <h4>Fill the data form</h4>
               <p>
                 Help us know more about you to provide you with the best
                 service.
               </p>
             </div>
-            <div className="flex-item-2">
+            <div className="flex-item-2 flex-item">
               <h4>Tell us your symptoms</h4>
               <p>
                 Pick the symptoms that you are experiencing and the level of
                 severity
               </p>
             </div>
-            <div className="flex-item-3">
+            <div className="flex-item-3 flex-item">
               <h4>Get your diagnosis</h4>
               <p>
                 Get your diagnosis and treatment options diagnosed with typhoid
@@ -93,23 +90,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div
-          className="facts-container"
-          style={{
-            // backgroundColor: "#3b586b",
-            backgroundImage: `url(${image})`,
-            filter: "brightness(0.9)",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            height: "200px",
-            width: "70%",
-            margin: "auto",
-          }}
-        >
-          <span>DO YOU KNOW?</span>
-          <h6 className="fact">{fact}</h6>
-        </div>
+
+        <Card image={image} title={"Do you know?"} paragraph={fact} />
 
         <div
           className="section-container-grey"

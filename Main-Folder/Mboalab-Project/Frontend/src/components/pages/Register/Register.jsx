@@ -39,7 +39,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <div className="image-container">
+      <div className="register-image-container">
         <img src={image} alt="logo" />
       </div>
       <div className="register-container">
@@ -63,7 +63,7 @@ const Register = () => {
             ]}
           >
             <Input
-              prefix={<MailOutlined className="site-form-item-icon" />}
+              prefix={<MailOutlined className="register-site-form-item-icon" />}
               placeholder="Email"
             />
           </Form.Item>
@@ -78,7 +78,7 @@ const Register = () => {
             hasFeedback
           >
             <Input.Password
-              prefix={<LockOutlined className="site-form-item-icon" />}
+              prefix={<LockOutlined className="register-site-form-item-icon" />}
               placeholder="Password"
             />
           </Form.Item>
@@ -104,7 +104,7 @@ const Register = () => {
             ]}
           >
             <Input.Password
-              prefix={<LockOutlined className="site-form-item-icon" />}
+              prefix={<LockOutlined className="register-site-form-item-icon" />}
               placeholder="Confirm Password"
             />
           </Form.Item>
@@ -159,7 +159,7 @@ const Register = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="register-form-button"
+              className="register-register-form-button"
               loading={loading}
             >
               Register

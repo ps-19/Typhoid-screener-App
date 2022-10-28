@@ -156,8 +156,7 @@ hr {
     font-size: 13px;
   }
 }
-/* @media screen and (max-width: 412px) {
-} */
+
 @media screen and (max-width: 412px) {
   .social-icons {
     width: 50%;

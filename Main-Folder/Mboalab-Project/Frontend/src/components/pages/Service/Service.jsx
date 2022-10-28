@@ -6,6 +6,7 @@ import { DatePicker, Button, Input, Select } from "antd";
 
 //internal imports
 import { listOfCountries, Symptoms } from "./components";
+import "./Service.css";
 
 const Service = () => {
   const { Option } = Select;
@@ -150,7 +151,7 @@ const Service = () => {
                 <div className="text-danger">{errors.email}</div>
               )}
             </div>
-            <div>
+            <div className="form-group">
               <label htmlFor="country">
                 Country
                 <span

@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="image-container">
+      <div className="login-image-container">
         <img src={image} alt="logo" />
       </div>
       <div className="login-container">
@@ -55,7 +55,7 @@ const Login = () => {
             ]}
           >
             <Input
-              prefix={<MailOutlined className="site-form-item-icon" />}
+              prefix={<MailOutlined className="login-site-form-item-icon" />}
               placeholder="Email"
             />
           </Form.Item>
@@ -70,7 +70,7 @@ const Login = () => {
             hasFeedback
           >
             <Input.Password
-              prefix={<LockOutlined className="site-form-item-icon" />}
+              prefix={<LockOutlined className="login-site-form-item-icon" />}
               placeholder="Password"
             />
           </Form.Item>
@@ -97,7 +97,7 @@ const Login = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="login-form-button"
+              className="login-login-form-button"
               loading={loading}
             >
               Log in
