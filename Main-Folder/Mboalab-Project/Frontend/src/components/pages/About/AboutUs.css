@@ -1,0 +1,269 @@
+.about-us-paragraph {
+  /* margin: 0 auto; */
+  margin-left: 20% !important;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.about-us-paragraph-container {
+  background-color: rgba(121, 168, 188, 0.281);
+  width: 70%;
+  margin-left: 15%;
+  padding: 30px 0;
+}
+
+.about-us-paragraph-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: rgb(10, 0, 0);
+}
+
+.about-us-paragraph-container p {
+  font-size: 12px;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fff;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 1pc 1pc 0 0;
+}
+
+.about-us-text h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.about-us-text p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  max-width: 500px;
+}
+.hero-links a {
+  text-align: center;
+}
+.contact-phone {
+  width: 100%;
+}
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 250px;
+  position: relative;
+}
+@keyframes BottomToTop {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated-text {
+  margin-left: 8px;
+  color: rgb(50, 126, 240);
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomToTop 6s linear infinite 0s;
+  text-align: left;
+}
+
+.animated-text:nth-child(2n + 2) {
+  animation-delay: 2s;
+}
+
+.animated-text:nth-child(3n + 3) {
+  animation-delay: 4s;
+}
+
+.content {
+  width: 100%;
+}
+
+.about-doctors {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.doctor1 {
+  flex-direction: row;
+  gap: 40px;
+  margin: 40px;
+  height: 200px;
+}
+
+.doctor2 {
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.about-doctors-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 200px; */
+  flex: 100%;
+  background-color: #fff;
+  width: 100%;
+}
+
+.about-doctors-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* height: 400px; */
+  flex: 100%;
+  background-color: #fff;
+}
+
+.about-doctors-images > img {
+  height: 400px;
+  width: 100%;
+  /* border-radius: 15pc; */
+  margin: 10px;
+}
+
+.principles-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  width: 100%;
+  background-color: #fff;
+}
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 90%;
+  background-color: #fff;
+}
+
+.principles-image > img {
+  width: 100%;
+  height: 300px;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 480px) {
+  .about-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    border-radius: 1pc 1pc 0 0;
+  }
+
+  .animated-text {
+    padding-left: 40px;
+    color: rgb(50, 126, 240);
+    display: inline;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomToTop 6s linear infinite 0s;
+    text-align: left;
+  }
+}
+
+/* galaxy fold screen */
+@media screen and (max-width: 280px) {
+  .about-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    border-radius: 1pc 1pc 0 0;
+  }
+
+  .animated-text {
+    padding-left: 40px;
+    color: rgb(50, 126, 240);
+    display: inline;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomToTop 6s linear infinite 0s;
+    text-align: left;
+  }
+}

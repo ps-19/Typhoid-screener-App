@@ -1,0 +1,81 @@
+body {
+  background-color: #f4f4f4;
+  color: white;
+  /* font-family: "Lato"; */
+}
+.container-fluid {
+  width: 100%;
+}
+@media (max-width: 530px) {
+  .container-fluid {
+    left: 0;
+    margin: 10px 0;
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+}
+.blog-card {
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+  height: 450px;
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: visible;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 580px) {
+  .blog-card {
+    height: 350px;
+    overflow: visible;
+  }
+}
+.media {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.card-body {
+  color: black;
+  height: 100%;
+  padding: 30px 20px 50px;
+}
+@media (max-width: 530px) {
+  .card-body {
+    background-color: white;
+  }
+}
+.tagline {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.title {
+  color: #252830;
+  /* font-family: "Playfair Display SC"; */
+  font-size: 30px;
+  font-weight: 400;
+}
+.divider {
+  background: #252830;
+  height: 2px;
+  margin: 25px auto;
+  width: 40px;
+}
+.text-justify {
+  font-weight: 300;
+}
+
+@media (max-width: 530px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}
+
+/* surface duo screen */
+@media (max-width: 540px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}
