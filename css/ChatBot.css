@@ -1,0 +1,32 @@
+.hero__chat-box {
+  position: absolute;
+  display: none;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 1000;
+}
+.hero__chat-box.active {
+  display: block;
+}
+
+.hero__chat-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hero__chat-icon:hover {
+  background: var(--color-primary-dark);
+}
+.hero__chat-icon svg {
+  color: var(--color-white);
+}/*# sourceMappingURL=ChatBot.css.map */

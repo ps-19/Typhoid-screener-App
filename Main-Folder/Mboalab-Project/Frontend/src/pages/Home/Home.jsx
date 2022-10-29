@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillPhone } from "react-icons/ai";
 import Hero from "../../asset/image/hero-img.png";
+import ChatBot from "../../components/ChatBot/ChatBot";
 import "./Home.scss";
 
 function Home() {
@@ -35,14 +36,7 @@ function Home() {
         <img src={Hero} alt="hero" />
       </div>
 
-      {/* <div className="hero__chat-box">
-        <iframe
-          width="350"
-          height="550"
-          allow="microphone"
-          src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"
-        ></iframe>
-      </div> */}
+      <ChatBot />
     </section>
   );
 }

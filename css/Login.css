@@ -1,0 +1,48 @@
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.login-section .login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272643;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.login-section .login__container h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+.login-section .login__container .login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.login-section .login__container .login__form label {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+.login-section .login__container .login__form label input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #272643;
+  background-color: #fff;
+}
+.login-section .login__container .login__form .login__button {
+  width: 100%;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=Login.css.map */

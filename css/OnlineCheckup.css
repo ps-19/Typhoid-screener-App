@@ -182,6 +182,12 @@
 .intro__page .intro__page-text {
   text-align: left;
 }
+.intro__page .intro__page-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .progress__card {
   height: 30px;

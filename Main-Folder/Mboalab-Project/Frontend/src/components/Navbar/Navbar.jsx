@@ -69,6 +69,7 @@ function Navbar() {
               target="_blank"
               href="https://murmuring-castle-35671.herokuapp.com"
               onClick={() => setIsOpen((prev) => !prev)}
+              rel="noreferrer"
             >
               Talk
             </a>
@@ -80,7 +81,7 @@ function Navbar() {
             <button className="login">Login</button>
           </Link>
 
-          <Link to="/sign-up" onClick={() => setIsOpen((prev) => !prev)}>
+          <Link to="/signup" onClick={() => setIsOpen((prev) => !prev)}>
             <button className="signup">Sign Up</button>
           </Link>
         </div>

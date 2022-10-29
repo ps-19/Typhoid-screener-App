@@ -175,6 +175,7 @@
   justify-content: center;
   margin-top: 6rem;
   transition: all 0.3s ease-in-out;
+  padding-top: 2rem;
 
   &.hidden {
     display: none;
@@ -211,6 +212,19 @@
 
   .intro__page-text {
     text-align: left;
+  }
+
+  .intro__page-img {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin-top: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -315,6 +329,7 @@
 
     .intro__page-text {
       text-align: center;
+      padding-top: 6rem;
     }
   }
 }

@@ -4,7 +4,7 @@ import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 import StepFour from "./StepFour";
 import StepFive from "./StepFive";
-import ProgressStep from "../../components/ProgressStep";
+import ProgressStep from "../../components/ProgressStep/ProgressStep";
 import FormImg from "../../asset/image/form-img.png";
 import "./OnlineCheckup.scss";
 

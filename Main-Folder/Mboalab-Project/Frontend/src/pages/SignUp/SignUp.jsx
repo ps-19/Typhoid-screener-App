@@ -6,19 +6,19 @@ import {
   AiFillGoogleCircle,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import "./Login.scss";
+import "./SignUp.scss";
 
-function Login() {
+function SignUp() {
   return (
-    <section className="login-section">
-      <div className="login__container">
+    <section className="signup-section">
+      <div className="signup__container">
         <img src={Logo} alt="logo" />
-        <h1>Log in to your Mboalab Account</h1>
+        <h1>Create an Mboalab Account</h1>
 
-        <form className="login__form">
+        <form className="signup__form">
           <label htmlFor="email">
             <input
-              className="login__input"
+              className="signup__input"
               type="text"
               name="email"
               id=""
@@ -28,7 +28,7 @@ function Login() {
 
           <label htmlFor="password">
             <input
-              className="login__input"
+              className="signup__input"
               type="password"
               name="password"
               id=""
@@ -36,20 +36,20 @@ function Login() {
             />
           </label>
 
-          <button className="login__button" type="submit">
-            Log In
+          <button className="signup__button" type="submit">
+            Sign Up
           </button>
         </form>
 
-        <p className="to-signup">
-          Don't have an account?{" "}
+        <p className="to-login">
+          Already have an account?{" "}
           <NavLink to="/signup" className="login__link">
-            Sign Up
+            Log In
           </NavLink>
         </p>
 
-        <div className="login__social-links">
-          <p>Or Log In with</p>
+        <div className="signup__social-links">
+          <p>Or Sign Up with</p>
           <div className="social-links">
             <a href="#" className="social-link">
               <AiFillFacebook />
@@ -67,4 +67,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;

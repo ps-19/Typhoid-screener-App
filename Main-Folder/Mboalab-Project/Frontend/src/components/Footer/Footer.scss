@@ -53,10 +53,17 @@ footer {
     }
   }
 
+  .footer__links {
+    ul {
+      list-style: none;
+    }
+  }
+
   .footer__social {
     ul {
       display: flex;
       gap: 1rem;
+      list-style: none;
     }
   }
 }

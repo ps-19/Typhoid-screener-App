@@ -85,19 +85,19 @@ function Contact() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31848.135702262563!2d11.428475379101561!3d3.80641180000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bd1860b12a267%3A0x703e7c20a22cc1de!2sMboalab!5e0!3m2!1sen!2sng!4v1666290777082!5m2!1sen!2sng"
           width="600"
           height="450"
-          // style="border:0;"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          title="MboaLab Location"
         ></iframe>
 
         <div className="contact__info">
           <h4>Or reach out directly on:</h4>
+          <a href="tel:+23 76 9746 5154">+23 76 9746 5154</a>
+          <a href="mailto:mboalab@gmail.com">mboalab@gmail.com</a>
           <p>
             <MdLocationOn /> PO Box: 31066, Yaoundé, Cameroon.
           </p>
-          <a href="tel:+23 76 9746 5154">+23 76 9746 5154</a>
-          <a href="mailto:mboalab@gmail.com">mboalab@gmail.com</a>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@
   gap: 2rem;
   margin-top: 7rem;
   margin-bottom: 5rem;
+  height: calc(100vh - 5rem);
 }
 .hero .hero__text {
   width: 50%;
@@ -64,14 +65,7 @@
   margin-right: 5rem;
 }
 .hero .hero__img img {
-  width: 100%;
-}
-.hero .hero__chat-box {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 20rem;
-  z-index: 1000;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {

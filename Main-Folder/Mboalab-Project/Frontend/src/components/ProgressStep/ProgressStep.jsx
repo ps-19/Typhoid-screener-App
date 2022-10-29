@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { MdOutlineRadioButtonUnchecked } from "react-icons/md";
-// import "./OnlineCheckup.scss";
 
 const ProgressStep = ({ step, setStep }) => {
   return (
