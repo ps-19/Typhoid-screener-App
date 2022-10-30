@@ -13,6 +13,7 @@ function renderHere(item) {
     />
   );
 }
+
 function Comments() {
   const { data, loading } = Data();
   return (
@@ -39,12 +40,7 @@ function Comments() {
             </>
           )}
           <div className="my-form">
-            <form
-              id="contact-form"
-              action="/comments"
-              method="post"
-              role="form"
-            >
+            <form id="contact-form" action="/comments" method="post">
               <div className="controls">
                 <p>
                   <b>If you have any query please ask from community.</b>

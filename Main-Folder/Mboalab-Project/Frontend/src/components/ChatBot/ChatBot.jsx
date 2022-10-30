@@ -24,6 +24,7 @@ const ChatBot = () => {
           height="450"
           allow="microphone"
           src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"
+          title="dialogflow bot"
         ></iframe>
       </div>
 

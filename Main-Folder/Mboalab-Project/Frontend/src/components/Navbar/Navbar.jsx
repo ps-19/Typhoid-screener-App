@@ -5,7 +5,6 @@ import "./Navbar.scss";
 import Logo from "../../asset/image/logo.png";
 import { GoThreeBars } from "react-icons/go";
 import { GoX } from "react-icons/go";
-import { SlMenu } from "react-icons/sl";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

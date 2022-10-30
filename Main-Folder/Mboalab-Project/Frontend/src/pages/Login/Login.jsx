@@ -51,13 +51,13 @@ function Login() {
         <div className="login__social-links">
           <p>Or Log In with</p>
           <div className="social-links">
-            <a href="#" className="social-link">
+            <a href="facebook.com" className="social-link">
               <AiFillFacebook />
             </a>
-            <a href="#" className="social-link">
+            <a href="google.com" className="social-link">
               <AiFillGoogleCircle />
             </a>
-            <a href="#" className="social-link">
+            <a href="twitter.com" className="social-link">
               <AiFillTwitterCircle />
             </a>
           </div>
