@@ -38,7 +38,7 @@ function Home() {
                     </NavLink>
                     <a
                       href="tel:+2376-9746-5154"
-                      className="btn-get-started2 pdn"
+                      className="btn-get-started2 pdn mt-3"
                     >
                       <img
                         src={ins}
@@ -56,9 +56,13 @@ function Home() {
                 </div>
 
                 <div className="col-lg-3 pt-0 pt-lg-0 order-2 order-lg-1">
-                <iframe width="350" height="550" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"></iframe>
+                  <iframe
+                    width="350"
+                    height="550"
+                    allow="microphone;"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/healthybot"
+                  ></iframe>
                 </div>
-
               </div>
             </div>
           </div>
