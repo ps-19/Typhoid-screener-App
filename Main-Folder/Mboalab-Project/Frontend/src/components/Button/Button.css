@@ -1,0 +1,25 @@
+.btn-block2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn2 {
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #095484;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: green;
+}
+
+.login_btn {
+    width: 100px;
+    margin-top: -20px;
+}

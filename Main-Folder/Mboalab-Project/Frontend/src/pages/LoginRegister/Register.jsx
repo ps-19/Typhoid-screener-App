@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Btn from '../../components/Button/Button'
 import "./LoginRegister.css";
 
 function Register() {
@@ -8,9 +8,7 @@ function Register() {
       <div className="container">
         <div className="d-flex justify-content-center h-100">
           <div className="card">
-            <div className="card-header">
-              <h3>Sign In</h3>
-            </div>
+            <h3>Sign Up</h3>
             <div className="card-body">
               <form>
                 <div className="input-group form-group">
@@ -61,15 +59,8 @@ function Register() {
                     placeholder="Password" name="password"
                   />
                 </div>
-                <div className="form-group">
-                  <button className="btn float-right login_btn" type="submit" href="http://localhost:3000/service">Register</button>
-                </div>
+                <Btn className="btn2 float-right login_btn btn-info" type="submit" href="http://localhost:3000/service" text="Register" />
               </form>
-            </div>
-            <div className="card-footer">
-              <div className="d-flex justify-content-center links">
-                Already have an account?<NavLink to="/login">Sign In</NavLink>
-              </div>
             </div>
           </div>
         </div>

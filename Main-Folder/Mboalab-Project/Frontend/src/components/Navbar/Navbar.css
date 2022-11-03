@@ -1,0 +1,16 @@
+.navbar-brand {
+    color: #3498db !important;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #565387 !important;
+}

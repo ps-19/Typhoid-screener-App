@@ -1,15 +1,49 @@
-.abcd {
+.Service {
+    --white-color: #FFFFFF;
+    --primary-color: #247cff;
+    --section-bg-color: #F9F9F9;
+    --dark-color: #095484;
+    --title-color: #565758;
+    --p-color: #717275;
+    --border-color: #eaeaea;
+
+    --body-font-family: 'Open Sans', sans-serif;
+
+    --h1-font-size: 48px;
+    --h2-font-size: 36px;
+    --h3-font-size: 32px;
+    --h4-font-size: 28px;
+    --h5-font-size: 24px;
+    --h6-font-size: 22px;
+    --p-font-size: 18px;
+    --menu-font-size: 16px;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+.wallpaper {
     padding: 40px 0px 40px 0px;
     margin: 0;
     outline: none;
     font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 22px;
+}
+
+.title {
+    margin: 15px 0 4px;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .cd {
     margin: 15px 0 4px;
     font-weight: 400;
+    color: var(--dark-color);
+    font-size: medium;
 }
 
 .sp {
@@ -18,9 +52,10 @@
 
 .fm {
     width: 100%;
-    padding: 19px;
-    background: #fff;
-    box-shadow: 0 3px 20px #0000ff;
+    padding: 50px;
+    background: var(--white-color);
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .inp {
@@ -35,7 +70,7 @@
 .txt:hover,
 .sl:hover {
     outline: none;
-    border: 1px solid #095484;
+    border: 1px solid var(--primary-color);
 }
 
 .name input {
@@ -43,14 +78,14 @@
 }
 
 .sl {
-    padding: 7px 0;
+    padding: 7px px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    background: #e6eef7;
+    background: var(--white-color);
 }
 
 .opt {
-    background: #fff;
+    background: var(--white-color);
 }
 
 .sl,
@@ -64,7 +99,7 @@
 
 .day-visited input {
     width: calc(100% - -3px);
-    background: #e6eef7;
+    background: var(--white-color);
 }
 
 input[type="date"]::-webkit-inner-spin-button {
@@ -125,28 +160,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: calc(100% - 6px);
 }
 
-.btn-block2 {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.btn2 {
-    width: 150px;
-    padding: 10px;
-    border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #095484;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn2:hover {
-    background-color: green;
-}
-
 @media (min-width: 568px) {
     .name {
         display: flex;
@@ -176,6 +189,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 30px;
     margin-bottom: 25px;
     text-align: center;
+    font-size: var(--h5-font-size);
 }
 
 /* Contact Us Page */
@@ -186,6 +200,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 150px;
     margin-bottom: 150px;
 }
+
 .btn3 {
     width: 150px;
     padding: 10px;
@@ -195,16 +210,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     background-color: #095484;
     font-size: 16px;
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
 }
+
 .btn3:hover {
     background-color: #095484;
 }
-.abb{
+
+.tblhead {
     color: red;
 }
 
-.abb2{
-    color: #0000ff;
+.tblhead2 {
+    color: #247cff;
 }

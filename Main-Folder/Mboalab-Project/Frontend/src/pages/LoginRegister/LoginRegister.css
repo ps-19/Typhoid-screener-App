@@ -6,20 +6,17 @@
 .container {
   height: 100%;
   align-content: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .card {
   height: 370px;
-  margin-top: 130px;
-  margin-bottom: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-
-.social_icon span {
-  font-size: 60px;
-  margin-left: 10px;
-  color: #FFC312;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  border-radius: 20px;
+  padding: 15px;
 }
 
 .social_icon span:hover {
@@ -27,8 +24,10 @@
   cursor: pointer;
 }
 
-.card-header h3 {
-  color: white;
+h3 {
+  color: #247cff;
+  font-weight: bold;
+  padding: 20px;
 }
 
 .social_icon {
@@ -39,8 +38,8 @@
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #FFC312;
-  color: black;
+  color: #247cff;
+  background-color: white;
   border: 0 !important;
   /* padding: 10px 10px 10px 10px; */
 }
@@ -52,37 +51,35 @@ input:focus {
 }
 
 .remember {
-  color: white;
+  color: darkgray;
+  font-size: small;
+  margin-left: 40px;
 }
 
 .remember input {
   width: 20px;
   height: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-right: 5px;
+  margin-top: 10px;
 }
 
-.login_btn {
-  color: black;
-  background-color: #FFC312;
-  width: 100px;
-}
-
-.login_btn:hover {
-  color: black;
-  background-color: white;
+.fgt-password a {
+  text-decoration: solid;
 }
 
 .links {
-  color: white;
+  color: darkgrey;
 }
 
 .links a {
-  margin-left: 4px;
+  margin-left: 10px;
+  text-decoration: solid;
 }
 
 .form-control {
   margin-bottom: 10px;
+  border-radius: 10px 10px;
 }
 
 .input-group-text {

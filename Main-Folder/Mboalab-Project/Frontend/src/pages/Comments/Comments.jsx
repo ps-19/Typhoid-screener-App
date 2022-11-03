@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
-import Data from './Data-Loading/comment'
-import CommentCard from './Data-Loading/CommentCard';
+import Data from '../../components/Data-Loading/comment'
+import CommentCard from '../../components/Data-Loading/CommentCard';
+import './Comments.css';
+import Btn from '../../components/Button/Button'
 
 function renderHere(item) {
     return (
@@ -17,29 +19,29 @@ function Comments() {
     } = Data();
     return (
         <>
-            <div className="col-8 mx-auto">
+            <div className="col-8 mx-auto comments">
                 <div className="row">
                     {loading && <p>Loading the comments.....</p>}
 
                     {!loading &&
                         <>
-                        <div className="comment-heading">
-                            <h6>Racist, sexist, homophobic or generally hate filled comments have no place here.</h6>
-                            <p>we recommend you follow this list of <NavLink className="my-link" to="/terms-of-use">guidelines</NavLink></p>
-                        </div>
-                        <div>
-                            {/* {data.map(item => (renderHere(item)))} */}
-                        </div>
+                            <div className="comment-heading">
+                                <h6>Racist, sexist, homophobic or generally hate filled comments have no place here.</h6>
+                                <p>we recommend you follow this list of <NavLink className="my-link" to="/terms-of-use"><b>guidelines</b></NavLink></p>
+                            </div>
+                            <div>
+                                {/* {data.map(item => (renderHere(item)))} */}
+                            </div>
                         </>
                     }
-                    <div className="my-form">
+                    <div className="my-form mt-3">
                         <form id="contact-form" action="/comments" method="post" role="form">
                             <div className="controls">
-                            <p><b>If you have any query please ask from community.</b></p>
+                                <p><b>If you have any query please ask from community.</b></p>
                                 <div className="row">
-                                    <div className="col-md-6">
+                                    <div className="col-md-12">
                                         <div className="form-group">
-                                            <label htmlFor="form_name">User Id</label> 
+                                            <label htmlFor="form_name">User Id</label>
                                             <input id="form_name" type="text" name="firstname" className="form-control" placeholder="Please enter your UserID" data-error="UserID is required." />
                                         </div>
                                     </div>
@@ -60,7 +62,7 @@ function Comments() {
                                         </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <input type="submit" className="btn btn-outline-info btn-send  pt-2 btn-block" value="Publish Your Comment" />
+                                        <Btn type="submit" className="btn2 btn-info btn-block my-4" text="Publish Your Comment" />
                                     </div>
                                 </div>
                             </div>
