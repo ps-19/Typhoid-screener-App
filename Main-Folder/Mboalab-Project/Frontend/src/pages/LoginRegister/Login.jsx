@@ -42,7 +42,7 @@ function Login() {
                 <input type="checkbox" />
                 Remember Me
               </div>
-              <Btn text="Login" type="submit" href="http://localhost:3000/service" className="login_btn btn float-right btn-info" />
+              <Btn text="Login" type="submit" href="http://localhost:3000/service" className="login_btn btn2 float-right btn-info" />
             </form>
           </div>
           <div className="card-footer">
