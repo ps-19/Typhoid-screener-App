@@ -1,13 +1,19 @@
-.abcd{
-background-image: url('../asset/image/background_lighting.jpg');
-background-size: cover;
+.wallpaper{
+background-image: url('../asset/image/new\ background.jpg');
+background-size:contain;
 background-repeat: repeat;
 height: 100%;
+font-family: 'Open Sans', sans-serif;
+}
+
+.nvbar{
+  background-color: white;
 }
 
 .navbar-brand {
   color: #565387 !important;
   font-size: 1.7rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-link {

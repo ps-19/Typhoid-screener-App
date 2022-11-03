@@ -8,9 +8,7 @@ function Register() {
       <div className="container">
         <div className="d-flex justify-content-center h-100">
           <div className="card">
-            <div className="card-header">
-              <h3>Sign In</h3>
-            </div>
+            <h3>Sign In</h3>
             <div className="card-body">
               <form>
                 <div className="input-group form-group">
@@ -65,11 +63,6 @@ function Register() {
                   <button className="btn float-right login_btn" type="submit" href="http://localhost:3000/service">Register</button>
                 </div>
               </form>
-            </div>
-            <div className="card-footer">
-              <div className="d-flex justify-content-center links">
-                Already have an account?<NavLink to="/login">Sign In</NavLink>
-              </div>
             </div>
           </div>
         </div>

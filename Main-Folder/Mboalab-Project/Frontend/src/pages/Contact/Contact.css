@@ -1,0 +1,54 @@
+.Contact {
+    --white-color: #FFFFFF;
+    --primary-color: #247cff;
+    --section-bg-color: #F9F9F9;
+    --dark-color: #095484;
+    --title-color: #565758;
+    --p-color: #717275;
+    --border-color: #eaeaea;
+  
+    --body-font-family: 'Open Sans', sans-serif;
+  
+    --h1-font-size: 48px;
+    --h2-font-size: 36px;
+    --h3-font-size: 32px;
+    --h4-font-size: 28px;
+    --h5-font-size: 24px;
+    --h6-font-size: 22px;
+    --p-font-size: 18px;
+    --menu-font-size: 16px;
+  
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+  }
+
+
+
+.topic{
+    color:var(--primary-color);
+    margin-top: 30px;
+}
+
+.contact-form{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    font-size: 16px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}

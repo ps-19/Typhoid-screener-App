@@ -1,21 +1,17 @@
 import React from 'react'
-import './Service.css'
+import './Contact.css'
 
 function Contact() {
   return (
     <>
-      <div className="col-8 mx-auto marginGiven">
+      <div className="col-8 mx-auto Contact">
         <section className="mb-4">
-
-          <h1 className="h1-responsive font-weight-bold text-center mr-5">Contact Us</h1>
+          <h1 className="h1-responsive font-weight-bold text-center topic">Contact Us</h1>
           <br />
-          <h6 className="text-center w-responsive mx-auto mb-5 mr-5">Do you have any questions? <br /><br />Please do not hesitate to contact us directly. Our team will come back to you within
-            a matter of hours to help you.</h6>
-
+          <h5 className="text-center">Do you have any questions? </h5>
+          <h6 className="text-center w-responsive mx-auto mb-4">Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</h6>
           <div className="row">
-
             <div className="col-md-9 mb-md-0 mb-5">
-
               <form action="/contact" method="post" className="contact-form">
                 <div className="row">
                   <div className="col-md-6">
@@ -52,16 +48,14 @@ function Contact() {
 
                   </div>
                 </div>
-                <button
-                  type="submit"
-                  id="form-submit"
-                  className="btn btn-info btn-send  pt-2 btn-block"
-                >Send Message</button>
+                <div className="btn-block2">
+                  <button className="btn btn-info btn-send  pt-2 btn-block" type="submit" id="form-submit" >Send Message</button>
+                </div>
               </form>
             </div>
 
 
-            <div className="col-md-3 text-center">
+            <div className="col-md-3 text-center mt-5">
               <ul className="list-unstyled mb-0">
                 <li><i className="fas fa-map-marker-alt fa-2x"></i>
                   <p>31066, Yaoundé, Cameroon</p>

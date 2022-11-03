@@ -1,0 +1,31 @@
+.comments{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.comment-heading{
+    color: #095484;
+    margin-top: 30px;
+}
+
+.my-form{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #095484;
+    font-size: 16px;
+    color:  #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}

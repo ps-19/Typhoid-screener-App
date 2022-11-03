@@ -1,9 +1,14 @@
 .change {
     border-radius: 30px;
-    height: 450px;
+    margin-top: 80px;
+    height: 400px;
 }
 
 .image {
     padding: 20 20 20 20;
     margin-right: 10px;
+}
+
+#header{
+    font-family: 'Open Sans', sans-serif;
 }

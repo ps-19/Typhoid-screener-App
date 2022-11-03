@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './AboutUs.css'
-import img1 from '../asset/image/photo1.jpg'
-import img2 from '../asset/image/photo2.jpg'
-import img3 from '../asset/image/photo3.jpg'
-import img4 from '../asset/image/photo4.jpg'
-import img5 from '../asset/image/photo5.jpg'
+import img1 from '../../asset/image/photo1.jpg'
+import img2 from '../../asset/image/photo2.jpg'
+import img3 from '../../asset/image/photo3.jpg'
+import img4 from '../../asset/image/photo4.jpg'
+import img5 from '../../asset/image/photo5.jpg'
 
 function AboutUs() {
     return (
@@ -62,19 +62,19 @@ function AboutUs() {
                     </div>
                 </section>
 
-                <section className="section-padding" id="about">
+                <section className="section-padding my-5" id="about">
                     <div className="container">
                         <div className="row">
 
                             <div className="col-lg-6 col-md-6 col-12">
-                                <h2 className="mb-lg-3 mb-3">Meet Dr. Carson</h2>
+                                <h2 className="mb-lg-3 my-3 ">Meet Dr. Carson</h2>
 
                                 <p>Protect yourself and others by wearing masks and washing hands frequently. Outdoor is safer than indoor for gatherings or holding events. People who get sick with Coronavirus disease (COVID-19) will experience mild to moderate symptoms and recover without special treatments.</p>
 
                                 <p>You can feel free to use this CSS template for your medical profession or health care related websites. You can support us a little via PayPal if this template is good and useful for your work.</p>
                             </div>
 
-                            <div className="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div className="col-lg-4 col-md-5 col-12 mx-auto my-3">
                                 <div className="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
                                     <p className="featured-text"><span className="featured-number">2</span> Years<br /> of Experiences</p>
                                 </div>
@@ -84,7 +84,7 @@ function AboutUs() {
                     </div>
                 </section>
 
-                <section className="gallery">
+                <section className="gallery my-5">
                     <div className="container">
                         <div className="row">
 
@@ -100,11 +100,11 @@ function AboutUs() {
                     </div>
                 </section>
 
-                <section className="section-padding pb-0" id="timeline">
+                <section className="section-padding pb-0 mb-5" id="timeline">
                     <div className="container">
                         <div className="row">
 
-                            <h2 className="text-center mb-lg-5 mb-4">Our Timeline</h2>
+                            <h2 className="text-center mb-lg-5 my-4">Our Timeline</h2>
 
                             <div className="timeline">
                                 <div className="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
