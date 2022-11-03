@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Btn from '../../components/Button/Button'
 import "./LoginRegister.css";
 
 function Register() {
@@ -59,9 +59,7 @@ function Register() {
                     placeholder="Password" name="password"
                   />
                 </div>
-                <div className="form-group">
-                  <button className="btn float-right login_btn" type="submit" href="http://localhost:3000/service">Register</button>
-                </div>
+                <Btn className="btn float-right login_btn btn-info" type="submit" href="http://localhost:3000/service" text="Register" />
               </form>
             </div>
           </div>

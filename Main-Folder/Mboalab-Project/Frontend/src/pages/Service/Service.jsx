@@ -1,5 +1,6 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import './Service.css'
+import Btn from '../../components/Button/Button'
 
 function service() {
   return (
@@ -174,13 +175,7 @@ function service() {
             </table>
             <h4 className="cd little">Any comments, questions or suggestions?</h4>
             <textarea className="txt txtclarea" name="comment" rows="5"></textarea>
-
-            <div className="btn-block2">
-              <button className="btn2" type="submit" >Check Online</button>
-            </div>
-
-
-
+            <Btn text="Check Online" className="btn2" type="submit" />
           </form>
         </div>
       </div>

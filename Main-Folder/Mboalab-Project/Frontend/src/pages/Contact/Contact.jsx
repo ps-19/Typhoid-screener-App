@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import Btn from '../../components/Button/Button'
 
 function Contact() {
   return (
@@ -48,9 +49,7 @@ function Contact() {
 
                   </div>
                 </div>
-                <div className="btn-block2">
-                  <button className="btn btn-info btn-send  pt-2 btn-block" type="submit" id="form-submit" >Send Message</button>
-                </div>
+                <Btn className="btn btn-info btn-send  pt-2 btn-block" type="submit" id="form-submit" text="Send Message" />
               </form>
             </div>
 

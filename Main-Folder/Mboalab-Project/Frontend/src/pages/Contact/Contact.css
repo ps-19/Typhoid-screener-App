@@ -6,9 +6,9 @@
     --title-color: #565758;
     --p-color: #717275;
     --border-color: #eaeaea;
-  
+
     --body-font-family: 'Open Sans', sans-serif;
-  
+
     --h1-font-size: 48px;
     --h2-font-size: 36px;
     --h3-font-size: 32px;
@@ -17,21 +17,21 @@
     --h6-font-size: 22px;
     --p-font-size: 18px;
     --menu-font-size: 16px;
-  
+
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-  }
+}
 
 
 
-.topic{
-    color:var(--primary-color);
+.topic {
+    color: var(--primary-color);
     margin-top: 30px;
 }
 
-.contact-form{
+.contact-form {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 50px;

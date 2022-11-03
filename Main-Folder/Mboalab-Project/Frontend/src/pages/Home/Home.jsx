@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import cc from "../../asset/image/SecondSide.jpg";
 import ins from "../../asset/image/stethoscope.jpg";
-import "./HomeCss.css";
+import "./Home.css";
 
 function Home() {
   return (

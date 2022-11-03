@@ -51,7 +51,7 @@ input:focus {
 }
 
 .remember {
-  color:darkgray;
+  color: darkgray;
   font-size: small;
   margin-left: 40px;
 }
@@ -64,17 +64,7 @@ input:focus {
   margin-top: 10px;
 }
 
-
-.login_btn {
-  width: 100px;
-}
-
-.login_btn:hover {
-  color: black;
-  background-color: white;
-}
-
-.fgt-password a{
+.fgt-password a {
   text-decoration: solid;
 }
 
@@ -82,7 +72,7 @@ input:focus {
   color: darkgrey;
 }
 
-.links a{
+.links a {
   margin-left: 10px;
   text-decoration: solid;
 }

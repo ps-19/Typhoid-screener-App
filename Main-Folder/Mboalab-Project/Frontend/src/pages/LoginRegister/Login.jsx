@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./LoginRegister.css";
+import Btn from '../../components/Button/Button'
 
 function Login() {
   return (
@@ -41,9 +42,7 @@ function Login() {
                 <input type="checkbox" />
                 Remember Me
               </div>
-              <div className="form-group">
-                <button className="btn float-right login_btn" type="submit" href="http://localhost:3000/service">Login</button>
-              </div>
+              <Btn text="Login" type="submit" href="http://localhost:3000/service" className="login_btn btn float-right btn-info" />
             </form>
           </div>
           <div className="card-footer">
