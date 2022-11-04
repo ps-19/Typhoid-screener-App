@@ -88,7 +88,7 @@ const Navbar = () => {
       <ul id="verticalNav">
         <li onClick={icon1Clicked} className={icon1 ? "icon1 active" : "icon1"}>
           <div></div>
-          <Link href="http">
+          <Link to="/">
             <ForumIcon className="icon" />
           </Link>
         </li>
