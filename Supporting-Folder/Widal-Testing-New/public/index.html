@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-dark">
+        <form action="/load" method="post" class="contact-form">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group">
+                <label for="exampleInputFirstname">First name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputLastname">Last name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="description" rows="3"
+                    placeholder="Write little decription..."></textarea>
+            </div>
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
+                Image Sample</button>
+
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' name="image" accept="image/*" />
+                <div class="drag-text">
+                    <h3>Drag and drop a file or select add Sample</h3>
+                </div>
+            </div>
+            <!-- <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                            class="image-title">Uploaded Image</span></button>
+                </div>
+            </div> -->
+
+            <button type="submit" id="form-submit"
+                class="btn btn-info btn-send  pt-2 btn-block my-space">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Widal Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="file-upload">
+        <form action="/load" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="exampleInputFirstname">First name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname"
+                    placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputLastname">Last name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname"
+                    placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="email" name="email"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="description" rows="3" placeholder="Write little decription..."></textarea>
+            </div>
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
+                Image Sample</button>
+
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' name="image" onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <h3>Drag and drop a file or select add Sample</h3>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                            class="image-title">Uploaded Image</span></button>
+                </div>
+            </div>
+
+            <button type="submit" id="form-submit" class="btn btn-info btn-send  pt-2 btn-block my-space">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="./myscript.js"></script>
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</html> -->

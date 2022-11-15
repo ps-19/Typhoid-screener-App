@@ -1,0 +1,17 @@
+.link-item{
+    color: #282828;
+    text-decoration: none;
+}
+.nav-item{
+   height: 100%;
+}
+.link-item{
+    height: 100%;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+   align-items: center;
+   
+}
+.link-item:hover{
+    border-bottom: 2px solid blue
+}

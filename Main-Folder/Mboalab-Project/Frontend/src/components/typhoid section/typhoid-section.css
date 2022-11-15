@@ -1,0 +1,26 @@
+.typhoid-section{
+     background-color: rgba(0, 0, 0, 0.05)
+    
+
+
+}
+.main-text-container{
+    min-width: 30%;
+    max-width: 50%;
+}
+.main-header-text, .text{
+    opacity: 0.80;
+}
+.title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.sub-text{
+    opacity: 0.6;
+}
+.main-title{
+    color: #3498db;
+}
+.feature{
+    width: 33%;
+}
