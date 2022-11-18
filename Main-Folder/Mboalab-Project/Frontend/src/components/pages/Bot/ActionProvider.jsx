@@ -11,11 +11,11 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     }));
   };
 
-  const handleJavascriptQuiz = () => {
+  const handleCheckSelf = () => {
     const jsmessage = createChatBotMessage(
-      "Here are some JavaScript questions",
+      "Thanks for the reply, please click the button below to check yourself",
       {
-        widget: "javascriptQuiz",
+        widget: "assessSelf",
       }
     );
 
@@ -31,7 +31,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         return React.cloneElement(child, {
           actions: {
             handleHello,
-            handleJavascriptQuiz,
+            handleCheckSelf,
           },
         });
       })}

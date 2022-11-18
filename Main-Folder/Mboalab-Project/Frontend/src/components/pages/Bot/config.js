@@ -1,6 +1,6 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import Options from "./Options/Options";
-import Quiz from "./Quiz/Quiz";
+import AssessSelf from "./AssessSelf/AssessSelf";
 
 const botName = "Jesper";
 
@@ -25,8 +25,8 @@ const config = {
       widgetFunc: (props) => <Options {...props} />,
     },
     {
-      widgetName: "javascriptQuiz",
-      widgetFunc: (props) => <Quiz {...props} />,
+      widgetName: "assessSelf",
+      widgetFunc: (props) => <AssessSelf {...props} />,
       props: {
         questions: [
           {
