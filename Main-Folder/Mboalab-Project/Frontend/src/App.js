@@ -22,6 +22,17 @@ function App() {
   const [botOpen, setBotOpen] = useState(false);
 
   const handleClick = () => setBotOpen(!botOpen);
+
+  const saveMessages = (messages, HTMLString) => {
+    localStorage.setItem("chat_message", JSON.stringify(messages));
+  };
+
+  const loadMessages = () => {
+    const messages = JSON.parse(localStorage.getItem("chat_message"));
+    console.log(messages);
+    return messages;
+  };
+
   return (
     <div className="App">
       <Navbar />
@@ -45,6 +56,8 @@ function App() {
               messageParser={MessageParser}
               actionProvider={ActionProvider}
               className="bot-modal"
+              saveMessages={saveMessages}
+              messageHistory={loadMessages()}
             />
           </div>
         )}
