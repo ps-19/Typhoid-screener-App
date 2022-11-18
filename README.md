@@ -1,0 +1,1 @@
+# Typhoid-screener-App
