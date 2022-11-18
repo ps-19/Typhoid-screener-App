@@ -1,0 +1,5 @@
+#node_modules
+/node_modules
+
+#scss builds
+/src/components/dist/css/*

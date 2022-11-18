@@ -1,0 +1,205 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  color: #f6f3fc;
+}
+
+@mixin firefox {
+  @media screen and (min--moz-device-pixel-ratio: 0) {
+    @content;
+  }
+}
+
+.container {
+  display: block;
+  width: 100%;
+
+  .controll {
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    left: 35px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    span {
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0px 0px 8px 2px rgba(169, 134, 226, 0.2);
+      left: 40px;
+
+      &:hover {
+        box-shadow: 0px 0px 8px 4px rgba(169, 134, 226, 0.2);
+      }
+    }
+
+    .horizontalNav {
+      display: flex;
+      width: 100%;
+      height: 60px;
+      justify-content: flex-end;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 10px;
+
+      li {
+        text-transform: uppercase;
+        padding: 5px;
+
+        a {
+          font-family: "GilroyLight";
+          color: rgba(0, 0, 0, 0.5);
+
+          &:hover {
+            color: #32c1e0;
+            font-weight: bold;
+          }
+        }
+
+        &.active {
+          font-weight: bold;
+          border-bottom: 2px solid #32c1e0;
+
+          a {
+            color: #32c1e0;
+          }
+        }
+      }
+    }
+  }
+
+  #verticalNav {
+    position: fixed;
+    z-index: 100;
+    top: 80px;
+    height: 90vh;
+    width: 90px;
+    margin-left: 30px;
+    background-color: #a986e2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    .icon1 {
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 30px 0px 0px 30px;
+      cursor: pointer;
+
+      div {
+        display: none;
+        display: block;
+        position: fixed;
+        padding-block: 23.7px;
+        padding-inline: 10px;
+        top: calc(100vh - 75%);
+        left: 100px;
+
+        @include firefox {
+          top: calc(100vh - 76.69%);
+        }
+      }
+    }
+
+    .icon2 {
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 30px 0px 0px 30px;
+      cursor: pointer;
+
+      div {
+        display: none;
+        position: fixed;
+        padding-block: 23.7px;
+        padding-inline: 10px;
+        top: 293.5px;
+        left: 100px;
+
+        @include firefox {
+          top: calc(100vh - 56.2%);
+        }
+      }
+    }
+
+    .icon3 {
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 30px 0px 0px 30px;
+      cursor: pointer;
+
+      div {
+        display: none;
+        position: fixed;
+        padding-block: 23.7px;
+        padding-inline: 10px;
+        top: 420.5px;
+        left: 100px;
+
+        @include firefox {
+          top: calc(100vh - 35.7%);
+        }
+      }
+    }
+
+    .icon4 {
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 30px 0px 0px 30px;
+      cursor: pointer;
+
+      div {
+        display: none;
+        position: fixed;
+        padding-block: 23.7px;
+        padding-inline: 10px;
+        top: 547.5px;
+        left: 100px;
+
+        @include firefox {
+          top: calc(100vh - 15.2%);
+        }
+      }
+    }
+
+    .active {
+      background-color: #f6f3fc;
+
+      div {
+        display: block;
+        background-color: #f6f3fc;
+      }
+
+      .icon {
+        color: #a986e2;
+      }
+    }
+  }
+
+  .positioning {
+    height: 100vh;
+    width: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    div {
+      width: 100%;
+      height: 47.4px;
+      background-color: red;
+      position: absolute;
+    }
+  }
+}

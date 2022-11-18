@@ -1,0 +1,19 @@
+.options-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.option-button {
+  margin: 5px;
+  border-radius: 25px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option-button:hover {
+  color: #2591a8;
+}

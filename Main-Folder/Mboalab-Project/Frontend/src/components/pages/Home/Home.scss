@@ -1,0 +1,67 @@
+a {
+  cursor: pointer;
+}
+
+.home {
+  // margin: 0 auto;
+  // padding-top: 70px;
+  // padding-left: 120px;
+  // display: block;
+  // align-items: center;
+  // justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  text-align: right;
+
+  .controll {
+    padding-top: 70px;
+  }
+
+  .home-text {
+    position: absolute;
+    display: block;
+    top: 125px;
+    left: 200px;
+    width: 700px;
+    text-align: left;
+
+    h1 {
+      font-family: "GilroyBold", sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 60px;
+    }
+
+    p {
+      font-family: "GilroyLight";
+      font-size: 20px;
+      font-weight: regular;
+      color: rgba(0, 0, 0, 0.7);
+      width: 500px;
+      line-height: 30px;
+
+      a {
+        font-weight: bold;
+      }
+    }
+
+    button {
+      font-family: "GilroyLight";
+      display: inline-block;
+      margin-top: 40px;
+      padding: 20px 40px;
+      border-radius: 30px;
+      color: #f6f3fc;
+      background-color: #32c1e0;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(2px);
+      }
+    }
+  }
+}
